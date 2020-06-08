@@ -1,8 +1,7 @@
 <?php
 $bodyReceived = file_get_contents('php://input');
-$json = file_decode($bodyReceived,true);
-print_r($json);
-echo($json);
+
+echo($bodyReceived);
 
 
 
