@@ -1,14 +1,14 @@
 <?php
 $bodyReceived = file_get_contents('php://input');
 
-echo($bodyReceived);
+
 
 
 
 
 //**************************** */
 
-/*
+
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -20,7 +20,7 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS =>" {\r\n      \r\n        \"nombre\": \"INFOS11O\",\r\n        \"dato\": \".$raw_post_data.\"\r\n        \r\n    }",
+  CURLOPT_POSTFIELDS =>" {\r\n      \r\n        \"nombre\": \"INFOxxxxxaS11O\",\r\n        \"dato\": \".$bodyReceived .\"\r\n        \r\n    }",
   CURLOPT_HTTPHEADER => array(
     "Content-Type: application/json",
     "Authorization: Bearer 00D4R00000081Er!ARIAQCft8BjaDEahuKhwT6lIPhG0Eb4F1hMEsJOQOdvd_Rcpgsp0ln4AObAtnhJzn82Y72HZuvPofhfEq7La_7DEjhJAex7W",
@@ -33,4 +33,3 @@ $response = curl_exec($curl);
 curl_close($curl);
 
 
-*/
